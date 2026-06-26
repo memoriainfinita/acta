@@ -1,6 +1,6 @@
 ---
 created: 2026-05-15
-last_updated: 2026-06-13
+last_updated: 2026-06-26
 ---
 
 # acta — project state
@@ -26,6 +26,14 @@ Loaded via PowerShell profile (`$PROFILE`): `. "$HOME\scripts\acta.ps1"`
 `add` `edit` `list` `search` `run` `delete` `log` `chain` `export` `import` `push` `pull`
 
 ## History
+
+### 2026-06-26 — Published to GitHub
+
+- Public repo: https://github.com/memoriainfinita/acta (GPLv3)
+- Added `.gitignore` (excludes `_BACKUPS/`, `acta-export-*.json`) and `LICENSE` (GPLv3 verbatim)
+- README updated to v3: flag-based `edit`/`delete`, `chain edit`; generalized the Forgejo remote example
+- Repo topics: powershell, cli, snippet-manager, command-line, productivity, windows
+- Commit email set to elmmott@gmail.com (repo-local config)
 
 ### 2026-06-13 — v3: non-interactive edit/delete, chain edit
 

@@ -36,10 +36,15 @@ acta list --tag vm
 # Search by text or tag across all fields
 acta search <text>
 
-# Edit a snippet interactively (press Enter to keep current value)
+# Edit a snippet. With flags = partial non-interactive edit; no flags = interactive
 acta edit <id>
+acta edit <id> --title "new title" --desc "new desc" --cmd "new command" --tags a b c
 
-# Delete a snippet (shows list, prompts for ID)
+# Delete one or more snippets directly (prints the deleted snippet for recovery)
+acta delete <id>
+acta delete 3,5,7
+
+# Delete interactively (shows list, prompts for ID)
 acta delete
 ```
 
@@ -60,6 +65,7 @@ Named sequences of snippets that run in order.
 
 ```powershell
 acta chain add "name" "description" id,id,id
+acta chain edit "name" --name "new name" --desc "new desc" --ids 1,4,7
 acta chain list
 acta chain run "name"
 acta chain delete "name"
