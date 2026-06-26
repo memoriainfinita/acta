@@ -73,7 +73,7 @@ acta chain delete "name"
 
 Example:
 ```powershell
-acta chain add "boot-homelab" "Arrancar VM y servicios" 2,3,5
+acta chain add "boot-homelab" "Start VM and services" 2,3,5
 acta chain run "boot-homelab"
 ```
 
@@ -88,8 +88,8 @@ acta log clear     # clear log
 
 Output format:
 ```
-2026-05-15 04:00  OK   [2] Arrancar VM arr
-2026-05-15 04:01  FAIL(1)  [5] SSH a VM
+2026-05-15 04:00  OK   [2] Start VM arr
+2026-05-15 04:01  FAIL(1)  [5] SSH to VM
 ```
 
 ### Export / Import
@@ -125,8 +125,8 @@ acta pull    # pull latest from remote
 [
   {
     "id": 1,
-    "title": "Arrancar VM arr",
-    "description": "Arranca la VM arr en modo headless",
+    "title": "Start VM arr",
+    "description": "Start the arr VM in headless mode",
     "command": "& 'C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe' startvm arr --type headless",
     "tags": ["vm", "virtualbox"],
     "created": "2026-05-15 03:00",
@@ -142,7 +142,7 @@ acta pull    # pull latest from remote
   {
     "id": 1,
     "acta_id": 2,
-    "title": "Arrancar VM arr",
+    "title": "Start VM arr",
     "exit_code": 0,
     "timestamp": "2026-05-15 03:00"
   }
@@ -155,7 +155,7 @@ acta pull    # pull latest from remote
 [
   {
     "name": "boot-homelab",
-    "description": "Arrancar VM y servicios",
+    "description": "Start VM and services",
     "ids": [2, 3, 5],
     "created": "2026-05-15 03:00"
   }
