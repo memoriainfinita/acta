@@ -65,6 +65,6 @@ Loaded via PowerShell profile (`$PROFILE`): `. "$HOME\scripts\acta.ps1"`
 
 ## TODO
 
-- [ ] Sync setup: `git init` + remote en `$HOME\.config\acta\` cuando se quiera usar push/pull
-- [ ] Añadir tags a snippets 2 y 3 (VM) via `acta edit`
-- [x] Considerar `acta chain edit` para modificar chains existentes — implementado 2026-06-13
+- [ ] Sync setup: `git init` + remote in `$HOME\.config\acta\` when push/pull is needed
+- [ ] Add tags to snippets 2 and 3 (VM) via `acta edit`
+- [x] Consider `acta chain edit` to modify existing chains — implemented 2026-06-13
