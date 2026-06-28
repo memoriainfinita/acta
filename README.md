@@ -161,3 +161,7 @@ acta pull    # pull latest from remote
   }
 ]
 ```
+
+## Credits
+
+Developed by [@memoriainfinita](https://github.com/memoriainfinita) with the assistance of Claude Opus 4.8 (Anthropic).
