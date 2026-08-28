@@ -4,6 +4,8 @@ Command snippet manager for PowerShell. Store titled, described commands with ta
 
 *Acta* — Latin for official records, transactions, deeds.
 
+![acta listing snippets by tag, showing a chain and the execution log](docs/acta-demo.png)
+
 ## Installation
 
 1. Copy `acta.ps1` to a permanent location (e.g. `$HOME\scripts\acta.ps1`)
