@@ -1,6 +1,6 @@
 ---
 created: 2026-05-15
-last_updated: 2026-06-26
+last_updated: 2026-08-28
 ---
 
 # acta — project state
@@ -13,7 +13,7 @@ Production-ready. In daily use.
 
 | File | Location |
 |------|----------|
-| Source | `CODING GIT/ACTA/acta.ps1` |
+| Source | `D:\DOCS\CODELAB\1_in-progress\ACTA\acta.ps1` |
 | Active copy | `$HOME\scripts\acta.ps1` |
 | Data | `$HOME\.config\acta\acta.json` |
 | Log | `$HOME\.config\acta\acta-log.json` |
@@ -26,6 +26,11 @@ Loaded via PowerShell profile (`$PROFILE`): `. "$HOME\scripts\acta.ps1"`
 `add` `edit` `list` `search` `run` `delete` `log` `chain` `export` `import` `push` `pull`
 
 ## History
+
+### 2026-08-28 — fix: `edit --tags` on snippets stored without a tags property
+
+- `edit --tags` threw `SetValueInvocationException` on snippets whose JSON had no `tags` key, and printed "Updated." anyway, so the failure was silent. Direct assignment replaced with `Add-Member -Force`.
+- Hit while retagging the whole set: 3 of 12 snippets predated tags and could not be edited.
 
 ### 2026-06-26 — Published to GitHub
 

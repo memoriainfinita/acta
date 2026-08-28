@@ -188,7 +188,7 @@ function acta {
                 if ($flags.ContainsKey('--title')) { $s.title       = $flags['--title'] }
                 if ($flags.ContainsKey('--desc'))  { $s.description = $flags['--desc'] }
                 if ($flags.ContainsKey('--cmd'))   { $s.command     = $flags['--cmd'] }
-                if ($flags.ContainsKey('--tags'))  { $s.tags        = @($flags['--tags'] | ForEach-Object { "$_" }) }
+                if ($flags.ContainsKey('--tags'))  { $s | Add-Member -NotePropertyName tags -NotePropertyValue @($flags['--tags'] | ForEach-Object { "$_" }) -Force }
             } else {
                 Write-Host "Editing [$($s.id)] $($s.title) — press Enter to keep current value" -ForegroundColor Cyan
                 Write-Host ""
