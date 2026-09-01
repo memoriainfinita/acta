@@ -411,7 +411,7 @@ function acta {
             Write-Host "Imported from $p1" -ForegroundColor Green
         }
 
-        # ── push / pull (Forgejo via git) ────────────────────────────────
+        # ── push / pull (git remote) ─────────────────────────────────────
         "push" {
             try {
                 git -C $actaDir add acta.json acta-log.json acta-chains.json 2>&1

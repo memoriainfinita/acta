@@ -102,7 +102,7 @@ acta export path\to\backup.json    # exports to specified path
 acta import path\to\backup.json    # overwrites current acta.json (prompts confirmation)
 ```
 
-### Sync (Forgejo / git)
+### Sync (git)
 
 The `$HOME\.config\acta\` directory must be a git repo with a remote configured.
 
@@ -110,7 +110,7 @@ Setup (one time):
 ```powershell
 cd $HOME\.config\acta
 git init
-git remote add origin <your-remote-url>    # e.g. GitHub, Forgejo, Gitea
+git remote add origin <your-remote-url>    # e.g. GitHub, Gitea, any git host
 ```
 
 Then:
